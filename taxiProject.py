@@ -1,8 +1,9 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import pydot
 
 seed=1000           # seed the graph for reproducibility, you should be doing this  
-G= nx.gnp_random_graph (200, .06, seed=seed )       # here we create a random binomial graph with 20 nodes and an average (expected) connectivity of 10*.3= 3.
+G= nx.gnp_random_graph (30, .06, seed=seed )       # here we create a random binomial graph with 20 nodes and an average (expected) connectivity of 10*.3= 3.
 print ( G.nodes() )
 print(G.edges())
 
